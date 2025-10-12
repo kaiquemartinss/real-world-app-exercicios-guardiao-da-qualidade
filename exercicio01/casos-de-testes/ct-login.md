@@ -9,7 +9,7 @@
 | **Resultado encontrado** | O mesmo que o resultado esperado |
 | **Status** | ✅ Passou |
 
-================================================================
+---
 
 | **ID do Caso de Teste** | **CT002 - Login com credenciais inválidas** |
 |--------------------------|---------------------------------------------|
