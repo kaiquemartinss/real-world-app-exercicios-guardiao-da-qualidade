@@ -1,4 +1,4 @@
-# 🧭 Real World App - Cypress Tests
+# 🧭 Real World App - Exercícios
 
 Este projeto foi desenvolvido como parte do curso **Guardião da Qualidade** da LumeStack, com o objetivo de aplicar na prática os conceitos de **automação de testes** utilizando o **Cypress.io** em um ambiente realista de aplicação web.
 
