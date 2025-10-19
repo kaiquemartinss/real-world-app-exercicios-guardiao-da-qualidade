@@ -8,3 +8,4 @@
 | **Ambiente de teste** | Web - Navegador Google Chrome Versão 138.0.7204.168 (Versão oficial) |
 | **Resultado encontrado** | No campo que ficou em branco **(Neste caso o campo Last Name)** é apresentada a seguinte mensagem de erro **Last Name is required** e o botão **Sign Up** fica bloqueado. |
 | **Status** | ✅ Passou |
+| **Evidência** | ![CT004](../evidencias/CT004.gif) |

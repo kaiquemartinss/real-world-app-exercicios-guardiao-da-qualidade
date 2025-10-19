@@ -8,3 +8,4 @@
 | **Ambiente de teste** | Web - Navegador Google Chrome Versão 138.0.7204.168 (Versão oficial) |
 | **Resultado encontrado** | Mensagem: **"Transaction Submitted!"** e o saldo fica zerado. |
 | **Status** | ❌ Falhou |
+| **Evidência** | ![CT006](../evidencias/CT006.gif) |
