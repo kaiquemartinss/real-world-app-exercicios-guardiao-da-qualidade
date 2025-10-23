@@ -8,3 +8,4 @@
 | **Ambiente de teste** | Web - Navegador Google Chrome Versão 138.0.7204.168 (Versão oficial) |
 | **Resultado encontrado** | O mesmo que o resultado esperado |
 | **Status** | ✅ Passou |
+| **Evidência** | ![CT007](../evidencias/CT007.gif) |
