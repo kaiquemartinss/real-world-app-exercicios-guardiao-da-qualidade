@@ -1,7 +1,7 @@
 import userData from '../fixtures/userData.json'
 
-describe('Registro de novo usuário com sucesso', () => {
-  it('Deve registrar um novo usuário com informações válidas', () => {
+describe('Registro de novo usuário', () => {
+  it('Registro de novo usuário com sucesso', () => {
     cy.visit('http://localhost:3000/signin')
     cy.get("[data-test='signup']").click()
     cy.get("[data-test='signup-first-name']").type(userData.newUserSuccess.firstName)
@@ -13,7 +13,7 @@ describe('Registro de novo usuário com sucesso', () => {
     cy.location('pathname').should('eq', '/signin') 
   })
 
-  it('Deve exibir mensagens de erro ao tentar registrar um novo usuário sem preencher todas as informações obrigatórias', () => {
+  it('Registrar um novo usuário com informações incompletas', () => {
     cy.visit('http://localhost:3000/signin')
     cy.get("[data-test='signup']").click()
     cy.get("[data-test='signup-first-name']").type(userData.newUserSuccess.firstName)
