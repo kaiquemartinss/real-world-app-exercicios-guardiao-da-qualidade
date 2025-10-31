@@ -2,7 +2,7 @@ import userData from '../fixtures/userData.json'
 
 describe('Registro de novo usuário', () => {
   it('Registro de novo usuário com sucesso', () => {
-    cy.visit('http://localhost:3000/signin')
+    
     cy.get("[data-test='signup']").click()
     cy.get("[data-test='signup-first-name']").type(userData.newUserSuccess.firstName)
     cy.get("[data-test='signup-last-name']").type(userData.newUserSuccess.lastName)
