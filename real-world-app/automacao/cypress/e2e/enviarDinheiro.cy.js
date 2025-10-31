@@ -1,30 +1,20 @@
 import userData from '../fixtures/userData.json'
+import PaginaLogin from '../pages/paginaLogin'
+import PaginaEnvioDinheiro from '../pages/paginaEnvioDinheiro'
+
+const paginaLogin = new PaginaLogin()
+const paginaEnvioDinheiro = new PaginaEnvioDinheiro()
 
 describe('Envio de dinheiro', () => {
   it('Deve enviar dinheiro com sucesso', () => {
-    cy.visit('http://localhost:3000/signin')
-    cy.get("[data-test='signin-username']").type(userData.userSuccess.username)
-    cy.get("[data-test='signin-password']").type(userData.userSuccess.password)
-    cy.get("[data-test='signin-submit']").click()
-    cy.get("[data-test='main']").contains('Public')
-    cy.get("[data-test='nav-top-new-transaction']").click()
-    cy.get("[data-test='user-list-item-GjWovtg2hr']").click()
-    cy.get("[data-test='transaction-create-amount-input']").type('50')
-    cy.get("[data-test='transaction-create-description-input']").type('Test payment')
-    cy.get("[data-test='transaction-create-submit-payment']").click()
-    cy.get("[data-test='alert-bar-success']").contains('Transaction Submitted!')
+    paginaLogin.acessarPaginaLogin() 
+    paginaLogin.usuarioLogin(userData.userSuccess.username, userData.userSuccess.password)
+    paginaEnvioDinheiro.enviarDinheiro()
   })
 
   it('Enviar dinheiro com saldo insuficiente', () => {
-    cy.visit('http://localhost:3000/signin')
-    cy.get("[data-test='signin-username']").type(userData.userSuccess.username)
-    cy.get("[data-test='signin-password']").type(userData.userSuccess.password)
-    cy.get("[data-test='signin-submit']").click()
-    cy.get("[data-test='main']").contains('Public')
-    cy.get("[data-test='nav-top-new-transaction']").click()
-    cy.get("[data-test='user-list-item-GjWovtg2hr']").click()
-    cy.get("[data-test='transaction-create-amount-input']").type('50000')
-    cy.get("[data-test='transaction-create-description-input']").type('Test payment')
-    cy.get("[data-test='transaction-create-submit-payment']").click()
+    paginaLogin.acessarPaginaLogin() 
+    paginaLogin.usuarioLogin(userData.userSuccess.username, userData.userSuccess.password)
+    paginaEnvioDinheiro.enviarDinheiroSemSaldo()
   })
 })
