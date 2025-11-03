@@ -1,4 +1,4 @@
-# 🔷 Real World App - Exercícios
+# 🔷 Real World App - Exercício
 
 Este projeto foi desenvolvido como parte do curso **Guardião da Qualidade** da LumeStack, com o objetivo de aplicar na prática os conceitos de **automação de testes** utilizando o **Cypress.io** em um ambiente realista de aplicação web.
 
@@ -24,5 +24,7 @@ Este projeto utiliza o **RWA** como base para estudos e práticas do curso *Guar
 Aplicar os conhecimentos adquiridos no curso, desenvolvendo **casos de teste** e **scripts automatizados** para as principais funcionalidades do RWA:  
 - **Login**  
 - **Registro de Usuário**
+- **Transferência de Valores**
+- **Visualização de Transações**
 
 Essas features são fundamentais para o funcionamento da aplicação e representam cenários clássicos de testes de autenticação e validação de formulários.
