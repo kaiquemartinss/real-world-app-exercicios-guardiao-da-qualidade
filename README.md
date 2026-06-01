@@ -149,7 +149,7 @@ npx cypress run
 
 ## 📸 Evidências
 
-Os GIFs de execução de cada cenário estão disponíveis na pasta [`evidencias/`](./evidencias/).
+Os GIFs de execução de cada cenário estão disponíveis na pasta `evidencias/`.
 
 ---
 
