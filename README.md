@@ -120,7 +120,7 @@ real-world-app/
 
 ```bash
 # Clone o repositório
-git clone https://github.com/kaiquemartinss/real-world-app-exercicios-guardiao-da-qualidade.git
+git clone https://github.com/kaiquemartinss/real-world-app-cypress-tests.git
 
 # Acesse a pasta do projeto
 cd real-world-app-exercicios-guardiao-da-qualidade/real-world-app
